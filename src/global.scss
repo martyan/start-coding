@@ -1,9 +1,6 @@
 @import '~normalize.css/normalize.css';
+@import './variables.scss';
 
-body {
-  background: black;
-}
-
-div {
-  box-shadow: 1px 2px 3px black;
+* {
+  box-sizing: border-box;
 }
