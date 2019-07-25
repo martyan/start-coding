@@ -3,6 +3,7 @@ const autoprefixer = require('autoprefixer')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 const glob = require('glob')
 
 const isDev = process.env.NODE_ENV !== 'production'
@@ -106,5 +107,10 @@ config.plugins.push(new HtmlWebpackPlugin({
     minify: !isDev,
     files: files.map(file => path.basename(file).replace('.hbs', '.html'))
 }))
+
+config.plugins.push(new CopyWebpackPlugin([
+    { from: './assets/static', to: './assets/static' },
+    { from: './assets/icons-inline', to: './assets/icons-inline' }
+]))
 
 module.exports = config
