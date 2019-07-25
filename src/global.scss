@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+body {
+    padding: 30px;
+}
+
 .fancy {
     font-family: 'Press Start 2P', cursive;
 }
@@ -19,29 +23,21 @@
     font-weight: 100;
 }
 
-h1, h2, h3 {
+h1, h2 {
     line-height: 200%;
 }
 
 h1 {
-    padding: 10px;
-    font-size: 1.3em;
-
-    @media (min-width: $tablet) {
-        font-size: 2em;
-    }
-}
-
-h2 {
-    padding: 10px;
+    padding: 0 10px;
     font-size: 1em;
+    margin: 0;
 
     @media (min-width: $tablet) {
         font-size: 1.3em;
     }
 }
 
-h3 {
+h2 {
     padding: 10px;
     font-size: 1em;
 
