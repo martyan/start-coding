@@ -56,8 +56,16 @@ const config = {
                     },
                     'css-loader?sourceMap',
                     'postcss-loader',
-                    'sass-loader',
-                ],
+                    'sass-loader'
+                ]
+            },
+            {
+                test: /\.css$/,
+                include: /(node_modules|bower_components)/,
+                use: [
+                    'css-loader?sourceMap',
+                    'postcss-loader'
+                ]
             },
             {
                 test: /\.(jpe?g|png|gif|svg|ico)$/i,

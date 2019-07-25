@@ -11,7 +11,7 @@
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "dependencies": {
-        "lodash": "^4.17.14"
+        "aos": "^2.3.4"
     },
     "devDependencies": {
         "@babel/core": "^7.5.0",

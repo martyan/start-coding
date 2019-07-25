@@ -1,9 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,400|Press+Start+2P&display=swap');
+@import url('https://unpkg.com/aos@3.0.0-beta.6/dist/aos.css');
 @import '~normalize.css/normalize.css';
 @import './variables.scss';
 
-* {
-  box-sizing: border-box;
+html, body {
+
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+
+    * {
+
+        box-sizing: border-box;
+
+        &:focus {
+            outline: none;
+        }
+
+    }
+
 }
 
 body {
@@ -12,10 +27,6 @@ body {
 
 .fancy {
     font-family: 'Press Start 2P', cursive;
-}
-
-.serif {
-    font-family: 'Roboto Slab', serif;
 }
 
 .light {
