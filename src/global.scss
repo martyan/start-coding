@@ -1,6 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,400|Press+Start+2P&display=swap');
 @import '~normalize.css/normalize.css';
 @import './variables.scss';
 
 * {
   box-sizing: border-box;
+}
+
+.fancy {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.serif {
+    font-family: 'Roboto Slab', serif;
+}
+
+.light {
+    color: #888;
+    font-weight: 100;
+}
+
+h1, h2, h3 {
+    line-height: 200%;
+}
+
+h1 {
+    padding: 10px;
+    font-size: 1.3em;
+
+    @media (min-width: $tablet) {
+        font-size: 2em;
+    }
+}
+
+h2 {
+    padding: 10px;
+    font-size: 1em;
+
+    @media (min-width: $tablet) {
+        font-size: 1.3em;
+    }
+}
+
+h3 {
+    padding: 10px;
+    font-size: 1em;
+
+    @media (min-width: $tablet) {
+        font-size: 1.3em;
+    }
+}
+
+.invader {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+
+    .cls-4 {
+        animation: eyes 5s infinite ease-in-out;
+    }
+
+    @keyframes eyes {
+        0% {fill: #fab900;}
+        50% {fill: black;}
+        100% {fill: #fab900;}
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+iframe {
+    width: 80px;
+}
+
+.fork {
+    width: 80px;
+    margin: 50px auto;
+}
+
+.github {
+    display: block;
+    width: 100%;
+    max-width: 80px;
+    margin: 0 auto 100px;
 }

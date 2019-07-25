@@ -6,27 +6,27 @@
     <title></title>
 </head>
 <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+<noscript>You need to enable JavaScript to run this app.</noscript>
 
-    <ul id="routing"></ul>
+<ul id="routing"></ul>
 
-    <script>
-      const files = "<%= htmlWebpackPlugin.options.files %>".split(',')
-      const routing = document.getElementById('routing')
+<script>
+    const files = "<%= htmlWebpackPlugin.options.files %>".split(',')
+    const routing = document.getElementById('routing')
 
-      if(routing) {
+    if(routing) {
 
         files.forEach(file => {
-          const li = document.createElement('li')
-          const a = document.createElement('a')
-          const text = document.createTextNode(file)
-          a.href = file
-          a.appendChild(text)
-          li.appendChild(a)       
-          routing.appendChild(li)
+            const li = document.createElement('li')
+            const a = document.createElement('a')
+            const text = document.createTextNode(file)
+            a.href = './pages/' + file
+            a.appendChild(text)
+            li.appendChild(a)
+            routing.appendChild(li)
         })
 
-      }
-    </script>
+    }
+</script>
 </body>
 </html>
