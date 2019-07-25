@@ -1,5 +1,3 @@
-### Webpack x Handlebars coding starter
-
 - *Webpack*
 - *Handlebars*
 - *Hot Module Replacement*
