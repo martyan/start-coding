@@ -1,4 +1,5 @@
 const path = require('path')
+const webpack = require('webpack')
 const autoprefixer = require('autoprefixer')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
@@ -84,6 +85,7 @@ const getConfig = (env, argv) => {
             ]
         },
         plugins: [
+            new webpack.DefinePlugin({'process.env.NODE_ENV': JSON.stringify(!isDev ? 'production' : 'development')}),
             new MiniCssExtractPlugin({
                 filename: '[name].css'
             })

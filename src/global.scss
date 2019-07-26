@@ -11,6 +11,7 @@
 html, body {
 
     margin: 0;
+    padding: 50px 0 100px;
     font-family: 'Roboto Slab', serif;
 
     * {
@@ -95,5 +96,5 @@ iframe {
     display: block;
     width: 100%;
     max-width: 80px;
-    margin: 0 auto 100px;
+    margin: 0 auto;
 }
