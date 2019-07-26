@@ -101,7 +101,8 @@ const getConfig = (env, argv) => {
             filename: file.replace('.hbs', '.html').replace('./src/', './'),
             template: file.replace('src/', ''),
             minify: !isDev,
-            title: file
+            title: file,
+            dev: isDev
         }
 
         config.plugins.push(new HtmlWebpackPlugin(pluginConfig))
@@ -109,9 +110,10 @@ const getConfig = (env, argv) => {
 
     config.plugins.push(new HtmlWebpackPlugin({
         filename: 'index.html',
-        template: 'index.html',
+        template: 'index.hbs',
         minify: !isDev,
-        files: files.map(file => path.basename(file).replace('.hbs', '.html'))
+        files: files.map(file => path.basename(file).replace('.hbs', '.html')),
+        dev: isDev
     }))
 
     if(!isDev) {

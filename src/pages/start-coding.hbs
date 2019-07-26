@@ -3,19 +3,13 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no" />
-    <title></title>
+    <title>start-coding</title>
 </head>
 <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
 
     {{> ../components/some-component}}
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-28244283-11"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-28244283-11');
-    </script>
+    {{> ../components/analytics}}
 </body>
 </html>
