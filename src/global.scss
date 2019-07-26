@@ -3,9 +3,13 @@
 @import '~normalize.css/normalize.css';
 @import './variables.scss';
 
+::selection {
+    background: indianred;
+    color: white;
+}
+
 html, body {
 
-    height: 100%;
     margin: 0;
     font-family: 'Roboto Slab', serif;
 
