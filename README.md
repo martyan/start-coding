@@ -12,7 +12,6 @@
 </p>
 
 ### **[Demo](https://martinjuzl.com/start-coding)**
-<br />
 
 ### Let's get it started
 Clone or fork this repo
@@ -36,7 +35,7 @@ Your pages are available at `localhost:8080`
 ```
 npm run build
 ```
-<br /><br />
+<br />
 
 
 ### More read
