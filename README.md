@@ -12,6 +12,7 @@
 </p>
 
 ### **[Demo](https://martinjuzl.com/start-coding)**
+<br />
 
 ### Let's get it started
 Clone or fork this repo
