@@ -1,0 +1,15 @@
+<div class="partial">
+
+  {{#if (content "left")}}
+      <div class="left">
+          {{{block "left"}}}
+      </div>
+  {{/if}}
+
+  {{#if (content "right")}}
+      <div class="right">
+          {{{block "right"}}}
+      </div>
+  {{/if}}
+
+</div>

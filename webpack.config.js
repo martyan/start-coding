@@ -34,8 +34,12 @@ const getConfig = (env, argv) => {
                     test: /\.hbs$/,
                     loader: 'handlebars-loader',
                     options: {
+                        runtime: SRC_PATH + '/helpers/handlebars',
                         helperDirs: [SRC_PATH + '/helpers'],
-                        inlineRequires: /icons-inline/
+                        inlineRequires: /icons-inline/,
+                        precompileOptions: {
+                            knownHelpersOnly: false
+                        }
                     }
                 },
                 {
